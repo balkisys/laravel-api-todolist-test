@@ -57,17 +57,8 @@ Run the laravel development server
 
     php artisan serve
 
-| Domain | Method    | URI                      | Name              | Action
-                   | Middleware |
-+--------+-----------+--------------------------+-------------------+-------------------------------------------------+------------+
-|        | GET|HEAD  | /                        |                   | Closure
-                   | web        |
-|        | GET|HEAD  | api/todolists            | todolists.index   | App\Http\Controllers\TodoListController@index   | api        |
-|        | POST      | api/todolists            | todolists.store   | App\Http\Controllers\TodoListController@store   | api        |
-|        | GET|HEAD  | api/todolists/{todolist} | todolists.show    | App\Http\Controllers\TodoListController@show    | api        |
-|        | PUT|PATCH | api/todolists/{todolist} | todolists.update  | App\Http\Controllers\TodoListController@update  | api        |
-|        | DELETE    | api/todolists/{todolist} | todolists.destroy | App\Http\Controllers\TodoListController@destroy | api        |
-|        | GET|HEAD  | api/user                 |                   | Closure
-                   | api        |
-|        |           |                          |                   |
-                   |
+GET : api/todolists : todolists.index   | App\Http\Controllers\TodoListController@index  
+POST : api/todolists :  todolists.store |App\Http\Controllers\TodoListController@store
+GET : api/todolists/{todolist} : todolists.show : App\Http\Controllers\TodoListController@show
+PUT :  api/todolists/{todolist} : todolists.update  : App\Http\Controllers\TodoListController@update
+DELETE  : api/todolists/{todolist} : todolists.destroy  : App\Http\Controllers\TodoListController@destroy
