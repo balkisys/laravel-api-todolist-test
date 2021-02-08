@@ -41,24 +41,18 @@ You can now access the server at http://localhost:8000
 
 The api can be accessed at [http://localhost:8000/api](http://localhost:8000/api).
 
-## API Specification
-
-This application adheres to the api specifications set by the [Thinkster](https://github.com/gothinkster) team. This helps mix and match any backend with any other frontend without conflicts.
-
-> [Full API Spec](https://github.com/gothinkster/realworld/tree/master/api)
-
-
-
-
-
 # Testing API
 
 Run the laravel development server
 
     php artisan serve
 
-GET : api/todolists : todolists.index   | App\Http\Controllers\TodoListController@index  
+GET : api/todolists : todolists.index   | App\Http\Controllers\TodoListController@index 
+
 POST : api/todolists :  todolists.store |App\Http\Controllers\TodoListController@store
+
 GET : api/todolists/{todolist} : todolists.show : App\Http\Controllers\TodoListController@show
+
 PUT :  api/todolists/{todolist} : todolists.update  : App\Http\Controllers\TodoListController@update
+
 DELETE  : api/todolists/{todolist} : todolists.destroy  : App\Http\Controllers\TodoListController@destroy
